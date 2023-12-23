@@ -10,4 +10,4 @@ A minimal setup that causes the Discord bot to stop receiving and/or processing 
 In [`src/database.rs`](src/database.rs), depending on whether the match block with `get_reminders` (line 29) is
 commented out or not, the bot will behave differently. If the block is commented out, the bot will behave like normal.
 If the block is included (and by extension the database is queried), the bot will seemingly completely freeze and not
-respond to any command interactions.
+respond to any command interactions once it's queried the database for the first time.
